@@ -2,9 +2,10 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <YoutubePlayer/>
-    <configuration />
-    <search />
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Configuration />
+    <Search />
+    <Playlist />
+    <Panel />
   </div>
 </template>
 
@@ -12,16 +13,25 @@
 
 import Configuration from './components/configuration/Configuration.vue'
 import Search from './components/search/Search.vue'
-import HelloWorld from './components/HelloWorld.vue'
-import YoutubePlayer from './components/YoutubePlayer.vue'
+import Playlist from './components/playlist/Playlist.vue'
+import Panel from './components/panel/Panel.vue'
+import YoutubePlayer from './components/playlist/YoutubePlayer.vue'
+
+import state from './store/state'
+import SpotifyService from './lib/SpotifyService'
 
 export default {
   name: 'app',
   components: {
     Configuration,
     Search,
-    HelloWorld,
+    Playlist,
+    Panel,
     YoutubePlayer
+  },
+  mounted() {
+    // create a new spotify service instance
+    state.spotify.service = new SpotifyService()
   }
 }
 </script>

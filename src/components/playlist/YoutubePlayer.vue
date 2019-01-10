@@ -7,7 +7,7 @@
     </div>
 </template>
 <script>
-import { findMatchingVideo } from '../lib/YoutubeService'
+import { findMatchingVideo } from '../../lib/YoutubeService'
 
 export default {
   name: 'YoutubePlayer',

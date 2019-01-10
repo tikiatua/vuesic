@@ -1,7 +1,8 @@
 export default {
   spotify: {
     clientId: null,
-    cientSecret: null
+    cientSecret: null,
+    service: null
   },
   youtube: {
     api: null
