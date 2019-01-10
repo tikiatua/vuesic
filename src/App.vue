@@ -1,43 +1,29 @@
 <template>
-  <div :class="$style.app">
-
-    <logo />
-
-    <div id="configuration">
-      
-    </div>
-
-    <div id="search">
-
-    </div>
-
-    <div id="controls">
-
-    </div>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
+    <YoutubePlayer/>
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import Logo from './components/logo/Logo.vue';
-import Search from './components/search/Search.vue';
+import HelloWorld from './components/HelloWorld.vue'
+import YoutubePlayer from './components/YoutubePlayer.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    YoutubePlayer
   }
 }
 </script>
-
-<style lang="stylus" module>
-
-.app {
-  font-family 'Inter UI', 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing antialiased;
-  -moz-osx-font-smoothing grayscale;
-  text-align center;
-  color #2c3e50;
-  margin-top 60px;
-}
-
+<style lang="stylus">
+#app
+  font-family 'Avenir', Helvetica, Arial, sans-serif
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  text-align center
+  color #2c3e50
+  margin-top 60px
 </style>
