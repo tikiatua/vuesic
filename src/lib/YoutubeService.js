@@ -10,7 +10,6 @@ export function findMatchingVideo (artist, songName, duration) {
     }, (err, video) => {
       if (err) return reject(err)
 
-      console.log('video', video)
       resolve(video)
     })
   })
