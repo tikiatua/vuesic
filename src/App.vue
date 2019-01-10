@@ -4,7 +4,6 @@
     <YoutubePlayer/>
     <configuration />
     <search />
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
@@ -12,7 +11,6 @@
 
 import Configuration from './components/configuration/Configuration.vue'
 import Search from './components/search/Search.vue'
-import HelloWorld from './components/HelloWorld.vue'
 import YoutubePlayer from './components/YoutubePlayer.vue'
 
 export default {
@@ -20,7 +18,6 @@ export default {
   components: {
     Configuration,
     Search,
-    HelloWorld,
     YoutubePlayer
   }
 }
