@@ -28,7 +28,6 @@ class SpotifyService {
     })
   }
 
-
   async getSpotifySearchResponse (response, q) {
     console.log('response', response)
 
