@@ -1,12 +1,19 @@
 <template>
 <div>
-
+  ClientID: {{state.spotify.clientId}}
 </div>
 </template>
 
 <script>
+import state from '../../store/state'
+
 export default {
-	name: ''
+  name: 'Search',
+  data () {
+    return {
+      state: state
+    }
+  }
 }
 </script>
 
