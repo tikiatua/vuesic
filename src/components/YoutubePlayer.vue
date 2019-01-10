@@ -1,6 +1,6 @@
 <template>
     <div>
-        <youtube :video-id="videoId" ref="youtube"></youtube>
+        <youtube :video-id="videoId" ref="youtube" hidden></youtube>
         <button v-on:click="playVideo">Play</button>
         <button v-on:click="pauseVideo">Pause</button>
         <button v-on:click="playSomething">Play something</button>
