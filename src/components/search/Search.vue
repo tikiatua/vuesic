@@ -1,6 +1,7 @@
 <template>
 <div>
-  ClientID: {{state.spotify.clientId}}
+  <input v-model="search">
+  <button @click="doSearch">Search</button>
 </div>
 </template>
 
@@ -11,7 +12,16 @@ export default {
   name: 'Search',
   data () {
     return {
-      state: state
+      state: state,
+      search: null
+    }
+  },
+  methods: {
+    doSearch () {
+      let res = state.spotify.service.search(this.search)
+      res.then((dta) => {
+        console.log(dta)
+      })
     }
   }
 }

@@ -1,7 +1,6 @@
 import axios from 'axios'
 
 let accessToken = process.env.VUE_APP_SPOTIFY_ACCESS_TOKEN
-
 class SpotifyService {
   constructor (error) {
     this.error = error
@@ -16,7 +15,7 @@ class SpotifyService {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + this.token
+        'Authorization': 'Bearer ' + accessToken
       }
     }).then((response) => {
       return this.getSpotifySearchResponse(response, q)
@@ -31,7 +30,6 @@ class SpotifyService {
 
   init (token) {
     this.token = accessToken
-    // return this.getAccessToken()
   }
 
   async getSpotifySearchResponse (response, q) {

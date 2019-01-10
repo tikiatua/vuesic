@@ -1,6 +1,6 @@
 <template>
 <div>
-  Playlist	
+  Playlist
 </div>
 </template>
 

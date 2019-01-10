@@ -2,7 +2,6 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <YoutubePlayer/>
-    <Configuration />
     <Search />
     <Playlist />
     <Panel />
@@ -11,7 +10,6 @@
 
 <script>
 
-import Configuration from './components/configuration/Configuration.vue'
 import Search from './components/search/Search.vue'
 import Playlist from './components/playlist/Playlist.vue'
 import Panel from './components/panel/Panel.vue'
@@ -23,7 +21,6 @@ import SpotifyService from './lib/SpotifyService'
 export default {
   name: 'app',
   components: {
-    Configuration,
     Search,
     Playlist,
     Panel,
