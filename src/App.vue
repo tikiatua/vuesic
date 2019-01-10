@@ -26,7 +26,7 @@ export default {
     Panel,
     YoutubePlayer
   },
-  mounted() {
+  mounted () {
     // create a new spotify service instance
     state.spotify.service = new SpotifyService()
   }
@@ -40,4 +40,9 @@ export default {
   text-align center
   color #2c3e50
   margin-top 60px
+
+.container {
+  max-width: 1250px;
+  padding: 0px 40px;
+}
 </style>
